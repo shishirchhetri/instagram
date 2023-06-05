@@ -1,11 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Nav from '../components/Nav'
+// import Nav from '../components/Nav'
+import Sidebar from '../components/Sidebar'
+import PostCard from '../components/PostCard'
 
 const Layout = () => {
   return (
-    <div className='p-4 flex-col h-full'>
-        <Nav/>
+    <div className=' flex '>
+        <Sidebar/>
         <Outlet/>
     </div>
   )

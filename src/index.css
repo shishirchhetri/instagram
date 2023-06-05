@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+ @apply box-border m-0 p-0 font-mono
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  @apply w-full border my-2 py-2 px-3 rounded-2xl;
+}
+
+li{
+  @apply flex gap-3 list-none focus:outline-none  p-2 py-3 w-full cursor-pointer align-middle rounded-md font-medium transition duration-75 hover:bg-slate-100
+}
+
+.icon{
+  @apply flex h-5
+}
+
+.icon-comp{
+  @apply h-6 w-6
+}
+
+
+/* ul li{
+  @apply flex capitalize items-start text-center  p-4 justify-start bg-red-300 w-full gap-2 cursor-pointer
+} */ 
