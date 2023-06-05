@@ -6,6 +6,7 @@ import Layout from './pages/Layout'
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
+import PostCard from "./components/PostCard";
 // import Nav from "./components/Nav";
 const App = () => {
   return (
@@ -18,7 +19,6 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
-
     </div>
   );
 };
