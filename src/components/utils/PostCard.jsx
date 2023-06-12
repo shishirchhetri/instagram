@@ -1,11 +1,11 @@
 import React from "react";
-import profile from "../assets/img2.jpg";
+import profile from "../../assets/img2.jpg";
 import { AiOutlineMenu, AiOutlineHeart } from "react-icons/ai";
-import like from '../assets/icons/like.png'
-import comment from '../assets/icons/comment.png'
-import send from '../assets/icons/send.png'
-import save from '../assets/icons/save.png'
-import smile from '../assets/icons/smile.png'
+import like from '../../assets/icons/like.png'
+import comment from '../../assets/icons/comment.png'
+import send from '../../assets/icons/send.png'
+import save from '../../assets/icons/save.png'
+import smile from '../../assets/icons/smile.png'
 
 const PostCard = () => {
   return (

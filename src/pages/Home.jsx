@@ -1,10 +1,11 @@
 import React from 'react'
-import PostCard from '../components/PostCard'
+import PostCard from '../components/utils/PostCard'
+import Messages from '../components/Messages'
 
 function Home() {
   return (
     <div>
-      <PostCard/>
+      {/* <Messages/> */}
     </div>
   )
 }

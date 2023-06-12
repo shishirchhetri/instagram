@@ -2,25 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
- @apply box-border m-0 p-0 font-mono
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap') format('woff2'),
+       url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap') format('woff');
 }
-input[type="text"],
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap'); */
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+/* input[type="text"], */
 input[type="password"],
 input[type="email"] {
   @apply w-full  my-2 py-2 px-3 rounded-2xl focus:outline-none ;
 }
 
-li{
-  @apply flex gap-3 list-none focus:outline-none  p-2 py-3 w-full cursor-pointer align-middle rounded-md font-medium transition duration-75 hover:bg-slate-100
+.li-lg{
+  @apply flex list-none gap-3 p-2 py-[10px]  hover:bg-slate-100 w-full ml-[2px]  max-w-[245px]
+}
+
+.li-sm{
+@apply flex m-0 p-3 items-center align-middle gap-0 list-none
 }
 
 .icon{
-  @apply flex h-5
+  @apply flex h-5 
 }
 
 .icon-comp, .post-icon{
-  @apply h-6 w-6 cursor-pointer
+  @apply h-7 w-7 cursor-pointer hover:scale-110 hover:font-bold
 }
 .post-icon{
   height: 18px;
@@ -29,4 +42,9 @@ li{
 .post-icon-sm{
   height: 16px;
   cursor: pointer;
+}
+
+.icon-msg{
+  height: 52px;
+  width: 52px;
 }
