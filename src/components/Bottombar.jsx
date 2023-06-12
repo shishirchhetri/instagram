@@ -3,9 +3,8 @@ import { AiOutlineHome, AiOutlineHeart } from "react-icons/ai";
 import { MdOutlineExplore, MdOutlineAddBox } from "react-icons/md";
 import profile from "../assets/img2.jpg";
 import { LuSearch } from "react-icons/lu";
-import reels from '../assets/video.png'
-import home from '../assets/icons/home.png'
-
+import reels from "../assets/video.png";
+import home from "../assets/icons/home.png";
 
 const Bottombar = () => {
   return (
@@ -14,18 +13,17 @@ const Bottombar = () => {
         <img src={home} className="icon-comp" />
       </li>
       <li className="li-sm">
-      <LuSearch className="icon-comp" title="Search" />
-    </li>
-      
+        <LuSearch className="icon-comp" title="Search" />
+      </li>
+
       <li className="li-sm">
-        <img src={reels} alt="" className="icon-comp"/>
+        <img src={reels} alt="" className="icon-comp" />
       </li>
 
       <li className="li-sm">
         <MdOutlineAddBox className="icon-comp" title="Create" />
       </li>
 
-      
       <li className="li-sm">
         <img
           src={profile}
