@@ -3,7 +3,7 @@ import { BsInstagram } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { MdOutlineExplore, MdOutlineAddBox,MdAddBox, MdExplore } from "react-icons/md";
 import { RiMessengerLine, RiMessengerFill } from "react-icons/ri";
-import {IoSearch, IoSearchSharp} from 'react-icons/io'
+import {  IoMdMenu, IoIosMenu} from 'react-icons/io'
 import logo from "../assets/logo.png";
 import profile from "../assets/img2.jpg";
 import Topbar from "./Topbar";
@@ -40,7 +40,7 @@ const handleActiveNav = (navItem)=>{
 
           <li className={`li-lg ${activenav ==='search' ? 'active' : ''}`} onClick={()=> handleActiveNav('search')}>
             { 
-              activenav === 'search' ? <IoSearchSharp className="icon-comp" title="Search" /> : <IoSearch className="icon-comp" title="Search" />
+              activenav === 'search' ? <IoSearchSharp className="icon-comp" title="Search" /> : <IoSearchSharp className="icon-comp" title="Search" />
             }
             <span className="hidden xl:inline">Search</span>
           </li>
@@ -94,12 +94,18 @@ const handleActiveNav = (navItem)=>{
         </ul>
 
         <div className="flex flex-col capitalize  gap-2  p-3 rounded-md mb-2">
-          <li className="li-lg">
-            <AiOutlineMenu className="icon-comp" />
+          <li className={`li-lg ${activenav ==='menu' ? 'active' : ''}`} onClick={()=> handleActiveNav('menu')}>
+            {
+              activenav === 'menu' ? <IoMdMenu className="icon-comp" />: <IoIosMenu className="icon-comp" />
+            }
+
+            
             <span className="hidden xl:inline">More</span>
           </li>
         </div>
       </div>
+
+
       <div className="z-10 fixed md:hidden flex flex-col justify-between h-screen">
         <Topbar />
         <Bottombar />
