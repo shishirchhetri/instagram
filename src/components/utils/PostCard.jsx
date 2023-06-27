@@ -1,53 +1,100 @@
-import React from "react";
-import profile from "../../assets/img2.jpg";
-import { AiOutlineMenu, AiOutlineHeart } from "react-icons/ai";
+import React from 'react'
+import profile from '../../assets/people/img5.jpg'
+import { AiOutlineHeart } from 'react-icons/ai'
+import {FaRegComment} from 'react-icons/fa'
+import {TbSend} from 'react-icons/tb'
+import {BiDotsHorizontalRounded} from 'react-icons/bi'
+import save from '../../assets/icons/save.png'
 import like from '../../assets/icons/like.png'
 import comment from '../../assets/icons/comment.png'
-import send from '../../assets/icons/send.png'
-import save from '../../assets/icons/save.png'
-import smile from '../../assets/icons/smile.png'
+import share from '../../assets/icons/send.png'
+
 
 const PostCard = () => {
   return (
-    <div className="w-64">
-      <div className="flex flex-col gap-2 p-3 pb-0 border-b border-green-950">
-        <div className="flex gap-2 " >
-          <img
-            src={profile}
-            className="icon-comp rounded-full"
-            alt=""
-            srcset=""
-          />
-          <div>
-            Lalalalisa_m <span></span> <span>3 h</span>
+    <div>
+      <div className="container mx-auto">
+      <div className="max-w-lg mx-auto bg-white border rounded-lg shadow-md ">
+        {/* Post Header */}
+        <div className="flex items-center justify-between p-4">
+          <div className="flex items-center">
+            <img
+              className="w-10 h-10 rounded-full mr-3 bg-cover bg-center"
+              src={profile}
+              alt="Profile"
+            />
+            <h4 className="font-semibold">John Doe</h4>
           </div>
-        </div>
-        <div className="h-64 w-full">
-          <img src={profile} alt="post content image" className="post h-full w-full "/>
+          <button className="text-gray-500 hover:text-gray-700">
+            <BiDotsHorizontalRounded className='icon-comp'/>
+          </button>
         </div>
 
-        <div className="flex justify-between">
-          <div className="flex gap-4">
-            <div><img src={like} className="post-icon" alt="" srcset="" /></div>
-            <div><img src={comment} alt="" srcset="" className="post-icon" /></div>
-            <div><img src={send} alt="" className="post-icon" /></div>
-          </div>
-          <div><img src={save} alt="" className="post-icon" /></div>
+        {/* Post Image */}
+        <div className='h-[600px]'>
+        <img
+          className="w-full h-full"
+          src={profile}
+          alt="Post"
+        />
         </div>
-        <div>
-          <div>liked by </div>
-          <div className="flex gap-2">
-            name <span>caption</span>
+
+        {/* Post Actions */}
+        <div className="flex items-center justify-between px-4 py-2">
+          <div className="flex space-x-4 items-center justify-center">
+            <button className="text-gray-500 hover:text-gray-700">
+            <img src={like} className='icon-comp' alt="" />
+            </button>
+            <button className="text-gray-500 hover:text-gray-700">
+            <img src={comment} className='icon-comp' alt="" />
+            </button>
+            <button className="text-gray-500 hover:text-gray-700">
+            <img src={share} className='icon-comp' alt="" />
+            </button>
           </div>
-          <div>view all comments</div>
-          <div className="flex justify-between items-center gap-4">
-            <input type="text" placeholder="Add a comment..." />
-            <span><img src={smile} className="post-icon-sm" alt="" srcset="" /></span>
-          </div>
+          <button className="text-gray-500 hover:text-gray-700">
+            <img src={save} className='icon-comp' alt="" />
+          </button>
+        </div>
+
+        {/* Post Likes */}
+        <div className="px-4 pb-2">
+          <p className="text-gray-700 font-semibold">Liked by <span className="text-blue-500">Jane Doe</span> and <span className="text-blue-500">12 others</span></p>
+        </div>
+
+        {/* Post Caption */}
+        <div className="px-4 pb-2">
+          <p className="text-gray-700">
+            <span className="font-semibold">John Doe: </span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus fermentum tellus, id lacinia neque posuere in.
+          </p>
+        </div>
+
+        {/* Post Comments */}
+        <div className="px-4 pb-2">
+          <p className="text-gray-700">
+            <span className="font-semibold">Jane Doe: </span>
+            Awesome photo! 🌟
+          </p>
+          <p className="text-gray-700">
+            <span className="font-semibold">Alex Smith: </span>
+            Beautiful shot! 🔥
+          </p>
+        </div>
+
+        {/* Add Comment */}
+        <div className="flex items-center px-4 py-2 border-t">
+          <input
+            className="w-full bg-gray-100 rounded-md px-3 py-2 focus:outline-none"
+            type="text"
+            placeholder="Add a comment..."
+          />
+          <button className="text-blue-500 font-semibold">Post</button>
         </div>
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default PostCard;
+export default PostCard

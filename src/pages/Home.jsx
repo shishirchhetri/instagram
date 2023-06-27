@@ -1,16 +1,15 @@
 import React from "react";
 import PostCard from "../components/utils/PostCard";
-import Messages from "../components/Messages";
-import Sidebar from "../components/Sidebar";
+import Feed from '../components/Feed'
+import Stories from "../components/Stories";
+
 
 function Home() {
   return (
-    <div className="flex items-center justify-start">
-      <div className=" xl:flex-[1]">
-        <Sidebar />
-      </div>
-      <div className="flex-[4]">
-        <Messages/>
+    <div className="">
+      <div>
+        <Stories/>
+        <Feed/>
       </div>
     </div>
   );

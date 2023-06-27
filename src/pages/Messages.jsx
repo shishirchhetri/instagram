@@ -1,5 +1,5 @@
 import React from "react";
-import Message from "./utils/Message";
+import Message from "../components/utils/Message";
 import { RiMessengerLine } from "react-icons/ri";
 import {MdKeyboardArrowDown} from 'react-icons/md'
 import {SlNote} from 'react-icons/sl'

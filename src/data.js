@@ -25,7 +25,7 @@ const menuItems = [{
     title:'search'
 },
 {
-    pat:'/explore',
+    path:'/explore',
     name:'explore',
     icon:'<MdOutlineExplore/>',
     title:'explore'
@@ -60,7 +60,6 @@ const menuItems = [{
     icon:profile,
     title:'profile'
 }
-
 ]
 
 export default menuItems;
