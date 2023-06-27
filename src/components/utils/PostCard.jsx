@@ -14,7 +14,7 @@ const PostCard = () => {
   return (
     <div>
       <div className="container mx-auto">
-      <div className="max-w-lg mx-auto bg-white border rounded-lg shadow-md ">
+      <div className="max-w-lg mx-auto bg-white  rounded-lg p-4">
         {/* Post Header */}
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
@@ -83,9 +83,9 @@ const PostCard = () => {
         </div>
 
         {/* Add Comment */}
-        <div className="flex items-center px-4 py-2 border-t">
+        <div className="flex items-center px-4 py-1 border-b">
           <input
-            className="w-full bg-gray-100 rounded-md px-3 py-2 focus:outline-none"
+            className="w-full bg-transparent rounded-md px-2 py-1 focus:outline-none"
             type="text"
             placeholder="Add a comment..."
           />

@@ -98,8 +98,8 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="w-[550px] sticky top-0 left-0">
-      <div className="hidden md:flex flex-col justify-between h-screen wfull border-r max-w-[73px]  xl:max-w-[340px] sticky top-0 left-0 ">
+    <div className="xl:w-[340px] bg-red-200 sticky top-0 left-0">
+      <div className="hidden md:flex flex-col justify-between h-screen w-full border-r max-w-[73px]  xl:max-w-[340px] sticky top-0 left-0 ">
         <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-[245px] mt-1 ">
           <div className="p-3 py-[26px]  w-full">
             <div className="hidden xl:inline">

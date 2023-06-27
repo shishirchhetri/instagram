@@ -5,7 +5,7 @@ import profile from "../assets/people/img1.jpg";
 
 const Feed = () => {
   return (
-    <div className="bg-red-100">
+    <div className="">
       <div className="flex flex-col gap-3">
         <Post />
         <Post />

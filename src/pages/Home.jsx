@@ -6,8 +6,8 @@ import Stories from "../components/Stories";
 
 function Home() {
   return (
-    <div className="">
-      <div>
+    <div className="container flex items-center">
+      <div className="flex flex-col items-center mx-auto sm:mt-[55px]">
         <Stories/>
         <Feed/>
       </div>

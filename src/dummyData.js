@@ -247,14 +247,5 @@ export const stories = [
     name: "cbi",
     img: user5,
   },
-  {
-    id: 9,
-    name: "cbi",
-    img: user5,
-  },
-  {
-    id: 10,
-    name: "cbi",
-    img: user5,
-  },
+  
 ];
