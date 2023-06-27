@@ -3,7 +3,7 @@ import { BsInstagram } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { MdOutlineExplore, MdOutlineAddBox,MdAddBox, MdExplore } from "react-icons/md";
 import { RiMessengerLine, RiMessengerFill } from "react-icons/ri";
-import {  IoMdMenu, IoIosMenu} from 'react-icons/io'
+import { IoMdMenu, IoIosMenu} from 'react-icons/io'
 import logo from "../assets/logo.png";
 import profile from "../assets/img2.jpg";
 import Topbar from "./Topbar";
@@ -24,7 +24,7 @@ const handleActiveNav = (navItem)=>{
   return (
     <div>
       <div className="hidden md:flex flex-col justify-between h-screen wfull border-r max-w-[73px]  xl:max-w-[245px] ">
-        <ul className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-[245px] mt-1 ">
+        <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-[245px] mt-1 ">
           <div className="p-3 py-[26px]  w-full">
             <div className="hidden xl:inline">
               <img src={logo} alt="logo" />
@@ -40,7 +40,7 @@ const handleActiveNav = (navItem)=>{
 
           <li className={`li-lg ${activenav ==='search' ? 'active' : ''}`} onClick={()=> handleActiveNav('search')}>
             { 
-              activenav === 'search' ? <IoSearchSharp className="icon-comp" title="Search" /> : <IoSearchSharp className="icon-comp" title="Search" />
+              activenav === 'search' ? <IoMdMenu className="icon-comp" title="Search" /> : <IoMdMenu className="icon-comp" title="Search" />
             }
             <span className="hidden xl:inline">Search</span>
           </li>
@@ -48,7 +48,7 @@ const handleActiveNav = (navItem)=>{
             {activenav==='explore' ?<MdExplore className="icon-comp" title="Explore" />: <MdOutlineExplore className="icon-comp" title="Explore" />}
             <span className="hidden xl:inline">Explore</span>
           </li>
-          <li className={`li-lg flex justify-center ${activenav ==='reels' ? 'active' : ''}`} onClick={()=> handleActiveNav('reels')}>
+          <li className={`li-lg ${activenav ==='reels' ? 'active' : ''}`} onClick={()=> handleActiveNav('reels')}>
             {
               activenav==='reels' ? <img src={reelsActive} alt="" className="icon-comp" /> : <img src={reels} alt="" className="icon-comp" />
 
@@ -91,7 +91,7 @@ const handleActiveNav = (navItem)=>{
             />
             <span className="hidden xl:inline">Profile</span>
           </li>
-        </ul>
+        </div>
 
         <div className="flex flex-col capitalize  gap-2  p-3 rounded-md mb-2">
           <li className={`li-lg ${activenav ==='menu' ? 'active' : ''}`} onClick={()=> handleActiveNav('menu')}>
