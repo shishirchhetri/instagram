@@ -4,8 +4,7 @@ import { stories } from '../dummyData'
 
 const Stories = () => {
   return (
-    <div className="container mx-auto  w-[750px]">
-      <div className="flex ">
+    <div className=" flex container mx-auto  w-[750px] overflow-x-scroll ">
         {
             stories.map(story =>{
                 return(
@@ -13,7 +12,6 @@ const Stories = () => {
                 )
             })
         }
-        </div>
     </div>
   )
 }
