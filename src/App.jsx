@@ -7,7 +7,9 @@ import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
 import PostCard from "./components/utils/PostCard";
 import Messages from "./pages/Messages";
-// import Nav from "./components/Nav";
+import Notifications from './pages/Notifications'
+
+
 const App = () => {
   return (
     <div className="app flex">
@@ -18,6 +20,10 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/notifications" element={<Notifications />} />
+
+
         </Routes>
       </Router>
     </div>

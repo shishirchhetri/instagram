@@ -39,6 +39,14 @@ input[type="email"] {
 .icon-comp, .post-icon{
   @apply h-7 w-7 cursor-pointer hover:scale-110 hover:font-bold
 }
+.icon-comp.action{
+  @apply h-6 w-6 md:h-7 md:w-7 cursor-pointer hover:scale-110 hover:font-bold 
+}
+
+.profile{
+  @apply h-9 w-9 rounded-full
+}
+
 .post-icon{
   height: 18px;
   width: 100%;
@@ -56,4 +64,25 @@ input[type="email"] {
 .link{
   text-decoration: none;
   
+}
+
+/* Add scrollbar styles for elements that need scrolling (optional) */
+.scrollable {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide the scrollbar in WebKit-based browsers */
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.grey{
+  color: rgb(191, 187, 187);
+  font-size: small;
+}
+
+.active{
+  font-size: bold;
 }

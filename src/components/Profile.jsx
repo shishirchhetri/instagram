@@ -1,5 +1,4 @@
 import React from "react";
-import Profiler from "./utils/Profiler";
 import { FiSettings } from "react-icons/fi";
 import { BsPlusLg } from "react-icons/bs";
 import photo from "../assets/img2.jpg";

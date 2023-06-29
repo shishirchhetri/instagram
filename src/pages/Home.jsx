@@ -1,16 +1,19 @@
 import React from "react";
-import PostCard from "../components/utils/PostCard";
-import Feed from '../components/Feed'
-import Stories from "../components/Stories";
-import Story from "../components/stories/Story";
-
+import Feed from "../components/Feed";
+import StoryContainer from "../components/StoryContainer";
+import SideContainer from "../components/SideContainer";
 
 function Home() {
   return (
-    <div className="container flex items-center mx-auto">
-      <div className="flex flex-col items-center mx-auto sm:mt-[70px]">
-        <Story/>
-        <Feed/>
+    <div className="flex mt-4 mx-auto gap-5 max-w-[100vw] overflow-hidden items-center justify-center">
+      <div className="max-w-[640px] w-full flex flex-col items-center mx-auto mt-[62px] md:mt-0  ">
+        <StoryContainer />
+        <div className=" flex mx-auto mt-[10px]">
+          <Feed />
+        </div>
+      </div>
+      <div className="hidden xl:flex p-4">
+      <SideContainer />
       </div>
     </div>
   );

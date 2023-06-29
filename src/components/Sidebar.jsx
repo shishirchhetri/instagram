@@ -7,13 +7,12 @@ import Bottombar from "./Bottombar";
 import { Link } from "react-router-dom";
 
 //sidebar icons
-
 import { BiSearch } from "react-icons/bi";
-import reels from "../assets/video.png";
-import reelsActive from "../assets/videoFill.png";
+import reels from "../assets/icons/video.png";
+import reelsActive from "../assets/icons/videoFill.png";
+import home from "../assets/icons/home.png";
+import homeActive from "../assets/icons/homeActive.png";
 import {
-  AiFillHome,
-  AiOutlineHome,
   AiOutlineHeart,
   AiFillHeart,
 } from "react-icons/ai";
@@ -37,8 +36,8 @@ const Sidebar = () => {
       id: 1,
       path: "/",
       name: "Home",
-      activeIcon: <AiFillHome className="icon-comp" />,
-      icon: <AiOutlineHome className="icon-comp" />,
+      activeImg: <img src={homeActive} className="h-6 w-6 hover:scale-110" />,
+      img: <img src={home} className="h-6 w-6 " />,
       title: "home",
     },
     {
@@ -61,8 +60,8 @@ const Sidebar = () => {
       id: 4,
       path: "/reels",
       name: "Reels",
-      activeImg: reelsActive,
-      img: reels,
+      activeImg: <img src={reelsActive} className="h-6 w-6 hover:scale-110 " />,
+      img: <img src={reels} className="h-6 w-6" />,
       title: "reels",
     },
     {
@@ -93,21 +92,23 @@ const Sidebar = () => {
       id: 8,
       path: "/profile",
       name: "Profile",
-      image: profile,
+      img: <img src={profile} className="h-6 w-6 rounded-full hover:scale-110" />,
       title: "profile",
     },
   ];
   return (
-    <div className="xl:w-[340px] sticky top-0 left-0">
+    <div className="xl:w-[340px] sticky top-0 left-0 z-10">
       <div className="hidden md:flex flex-col justify-between h-screen w-full border-r max-w-[73px]  xl:max-w-[340px] sticky top-0 left-0 ">
         <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-[245px] mt-1 ">
+          {/* logo */}
           <div className="p-3 py-[26px]  w-full">
             <div className="hidden xl:inline">
               <img src={logo} alt="logo" />
             </div>
             <BsInstagram className="h-6 w-6 inline xl:hidden" />
           </div>
-
+          {/* menu list items */}
+          
           {menuItems.map((item) => (
             <Link to={item.path} key={item.id}>
               <li
@@ -115,18 +116,15 @@ const Sidebar = () => {
                 onClick={() => handleActiveNav(item.title)}
               >
                 {activeNav === item.title
-                  ? (item.activeIcon && item.activeIcon) ||
-                    (item.activeImg && (
-                      <img src={item.activeImg} className="icon-comp" />
-                    ))
-                  : (item.icon && item.icon) ||
-                    (item.img && <img src={item.img} className="icon-comp" />)}
+                  ? item.activeIcon || item.activeImg
+                  : item.icon || item.img}
                 <span className="hidden xl:inline">{item.name}</span>
               </li>
             </Link>
           ))}
         </div>
 
+        {/* bottom hamburger menu */}
         <div className="flex flex-col capitalize  gap-2  p-3 rounded-md mb-2">
           <li
             className={`li-lg ${activeNav === "menu" ? "active" : ""}`}
@@ -142,11 +140,18 @@ const Sidebar = () => {
           </li>
         </div>
       </div>
+      {/* responsive menu changes in small screen */}
+<div className="fixed top-0 left-0 right-0 md:hidden">
+  <Topbar/>
+</div>
+<div className="fixed bottom-0 left-0 right-0 md:hidden">
+  <Bottombar/>
+</div>
 
-      <div className="z-10 fixed md:hidden flex flex-col justify-between h-screen">
+      {/* <div className="z-10 fixed md:hidden flex flex-col justify-between h-screen">
         <Topbar />
         <Bottombar />
-      </div>
+      </div> */}
     </div>
   );
 };

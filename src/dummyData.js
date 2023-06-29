@@ -1,275 +1,236 @@
-import { BsInstagram } from "react-icons/bs";
-// import { MdOutlineExplore, MdOutlineAddBox } from "react-icons/md";
-import { RiMessengerLine, RiMessengerFill } from "react-icons/ri";
-import { GoSearch } from "react-icons/go";
-import profile from "./assets/img2.jpg";
 import user1 from "./assets/people/img1.jpg";
 import user2 from "./assets/people/img2.jpg";
 import user3 from "./assets/people/img3.jpg";
-import user4 from "./assets/people/img4.jpg";
-import user5 from "./assets/people/img5.jpg";
+import user4 from "./assets/people/profile3.avif";
+import user5 from "./assets/people/profile4.avif";
+import user6 from "./assets/people/profile1.avif";
+import user7 from "./assets/people/img7.jpg";
+import user8 from "./assets/people/img8.jpg";
+import user9 from "./assets/people/profile1.avif";
+import user10 from "./assets/people/profile1.avif";
+import post1 from './assets/people/img1.jpg'
+import post2 from './assets/post/post2.jpg'
+import post3 from './assets/post/profile2.avif'
+import post4 from './assets/post/post4.jpg'
+import post5 from './assets/post/profile6.avif'
+import post6 from './assets/post/post6.jpg'
+import post7 from './assets/post/post7.jpg'
+import post8 from './assets/post/profile5.avif'
+import post9 from './assets/post/profile6.avif'
+import post10 from './assets/post/profile2.avif'
+import person1 from './assets/people/profile1.avif'
+import person2 from './assets/people/profile2.avif'
+import person3 from './assets/people/profile3.avif'
+import person4 from './assets/people/profile4.avif'
+import person5 from './assets/people/profile5.avif'
 
-//sidebar icons
-import home from "./assets/home.png";
-import homeFill from "./assets/homeActive.png";
-import { BiSearch } from "react-icons/bi";
-import reels from "./assets/video.png";
-import reelsActive from "./assets/videoFill.png";
-import { AiFillHome, AiOutlineHome , AiOutlineHeart, AiFillHeart} from "react-icons/ai";
-import {
-    MdOutlineExplore,
-    MdOutlineAddBox,
-    MdAddBox,
-    MdExplore,
-  } from "react-icons/md";
-
-// export const menuItems = [
-//     {
-//       id: 1,
-//       path: "/",
-//       name: "Home",
-//       activeIcon: <AiFillHome/>,
-//       icon: <AiOutlineHome/>,
-//       title: "home",
-//     },
-//     {
-//       id: 2,
-//       path: "/search",
-//       name: "Search",
-//       activeIcon: <BiSearch/>,
-//       icon: <BiSearch/>,
-//       title: "search",
-//     },
-//     {
-//       id: 3,
-//       path: "/explore",
-//       name: "Explore",
-//       activeIcon:<MdExplore/>,
-//       icon: <MdOutlineExplore/>,
-//       title: "explore",
-//     },
-//     {
-//       id: 4,
-//       path: "/reels",
-//       name: "Reels",
-//       activeImage: reelsActive,
-//       image: reels,
-//       title: "reels",
-//     },
-//     {
-//       id: 5,
-//       path: "/messages",
-//       name: "Messages",
-//       activeIcon: <RiMessengerFill/>,
-//       icon: <RiMessengerLine/>,
-//       title: "messages",
-//     },
-//     {
-//       id: 6,
-//       path: "/notifications",
-//       name: "Notifications",
-//       activeIcon: <AiFillHeart/>,
-//       icon: <AiOutlineHeart/>,
-//       title: "notifications",
-//     },
-//     {
-//       id: 7,
-//       path: "/create",
-//       name: "Create",
-//       activeIcon: <MdAddBox/>,
-//       icon: <MdOutlineAddBox/>,
-//       title: "create",
-//     },
-//     {
-//       id: 8,
-//       path: "/profile",
-//       name: "Profile",
-//       icon: profile,
-//       title: "profile",
-//     },
-//   ];
-
-export const hero = [
-  {
-    id: 1,
-    name: "friend1",
-    cover: "img1.jpg",
-    likes: "100 likes",
-  },
-  {
-    id: 2,
-    name: "friend2",
-    cover: "img2.jpg",
-    likes: "200 likes",
-  },
-  {
-    id: 3,
-    name: "friend3",
-    cover: "img3.jpg",
-    likes: "1000 likes",
-  },
-  {
-    id: 4,
-    name: "friend4",
-    cover: "img4.jpg",
-  },
-  {
-    id: 5,
-    name: "friend5",
-    cover: "img5.jpg",
-    likes: "115 likes",
-  },
-  {
-    id: 6,
-    name: "friend6",
-    cover: "img6.jpg",
-    likes: "232 likes",
-  },
-  {
-    id: 7,
-    name: "friend7",
-    cover: "img7.jpg",
-    likes: "323 likes",
-  },
-  {
-    id: 8,
-    name: "friend8",
-    cover: "img8.jpg",
-    likes: "423 likes",
-  },
-];
 
 export const posts = [
   {
     id: 1,
-    userName: "userName 1",
-    img: "post1.jpg",
-    likes: "300 likes",
+    username: "achel",
+    userImage: user1,
+    postImg:post1,
+    likes: "300 ",
     caption: "caption for post 1",
     time: "10 min ago",
   },
   {
     id: 2,
-    userName: "userName 2",
-    img: "post2.jpg",
-    likes: "500 likes",
+    username: "john",
+    userImage: user1,
+    postImg:post2,
+    likes: "500",
     caption: "caption for post 2",
     time: "20 min ago",
   },
   {
     id: 3,
-    userName: "userName 3",
-    img: "post3.jpg",
-    likes: "400 likes",
+    username: "legend",
+    userImage: user3,
+    postImg:post3,
+    likes: "400",
     caption: "caption for post 3",
     time: "30 min ago",
   },
   {
     id: 4,
-    userName: "userName 4",
-    img: "post4.jpg",
-    likes: "232 likes",
+    username: "lovely",
+    userImage: user4,
+    postImg:post4,
+    likes: "232",
     caption: "caption for post 4",
     time: "40 min ago",
   },
   {
     id: 5,
-    userName: "userName 5",
-    img: "post5.jpg",
-    likes: "120 likes",
+    username:"handcock",
+    userImage: user5,
+    postImg:post5,
+    likes: "120",
     caption: "caption for post 5",
     time: "50 min ago",
   },
   {
     id: 6,
-    userName: "userName 6",
-    img: "post6.jpg",
-    likes: "56 likes",
+    username: "king",
+    userImage: user6,
+    postImg:post6,
+    likes: "56",
     caption: "caption for post 6",
     time: "10 hour ago",
   },
   {
     id: 7,
-    userName: "userName 7",
-    img: "post7.jpg",
-    likes: "123 likes",
+    username: "zoro",
+    userImage: user7,
+    postImg:post7,
+    likes: "123",
     caption: "caption for post 7",
     time: "3 hour ago",
   },
   {
     id: 8,
-    userName: "userName 8",
-    img: "post8.jpg",
-    likes: "1,012 likes",
+    username: "luffy",
+    userImage: user8,
+    postImg:post8,
+    likes: "1,012",
     caption: "caption for post 8",
     time: "1 hour ago",
   },
+  {
+    id: 9,
+    username: "sanji",
+    userImage: user9,
+    postImg:post9,
+    likes: "10",
+    caption: "caption for post 9",
+    time: "1 hour ago",
+  },
+  {
+    id: 10,
+    username: "robin",
+    userImage: user10,
+    postImg:post10,
+    likes: "119",
+    caption: "caption for post 10",
+    time: "12 hour ago",
+  }
 ];
 
 export const stories = [
   {
     id: 1,
-    name: "john smith",
-    img: user1,
+    username: "john",
+    image: user1,
   },
   {
     id: 2,
-    name: "elen rachel",
-    img: user2,
+    username: "achel",
+    image: user2,
   },
   {
     id: 3,
-    name: "legend",
-    img: user3,
+    username: "legend",
+    image: user3,
   },
   {
     id: 4,
-    name: "lovely",
-    img: user4,
+    username: "lovely",
+    image: user4,
   },
   {
     id: 5,
-    name: "cbi",
-    img: user5,
+    username:"handcock",
+    image: user5,
   },
   {
     id: 6,
-    name: "cbi",
-    img: user5,
+    username: "king",
+    image: user6,
   },
   {
     id: 7,
-    name: "cbi",
-    img: user5,
+    username: "zoro",
+    image: user7,
   },
   {
     id: 8,
-    name: "cbi",
-    img: user5,
+    username: "luffy",
+    image: user8,
   },
   {
     id: 9,
-    name: "cbi",
-    img: user5,
+    username: "sanji",
+    image: user9,
   },
   {
     id: 10,
-    name: "cbi",
-    img: user5,
+    username: "robin",
+    image: user10,
   },
   {
-    id: 10,
-    name: "cbi",
-    img: user5,
+    id: 11,
+    username: "king",
+    image: user6,
   },
   {
-    id: 10,
-    name: "cbi",
-    img: user5,
+    id: 12,
+    username: "zoro",
+    image: user7,
   },
   {
-    id: 10,
-    name: "cbi",
-    img: user5,
+    id: 13,
+    username: "luffy",
+    image: user8,
   },
+  {
+    id: 14,
+    username: "sanji",
+    image: user9,
+  },
+  {
+    id: 15,
+    username: "robin",
+    image: user10,
+  },
+  
 ];
+
+export const suggestedUsers = [{
+  id:1,
+  username:'John_legend',
+  img:person1,
+  secondName:'followed by john and 7 others',
+  button:'follow'
+},
+{
+  id:2,
+  username:'Lalllisa',
+  img:person2,
+  secondName:'followed by john and 7 others',
+  button:'follow'
+},
+{
+  id:3,
+  username:'Jennie',
+  img:person3,
+  secondName:'followed by john and 7 others',
+  button:'follow'
+},
+{
+  id:4,
+  username:'Rosee',
+  img:person4,
+  secondName:'followed by john and 7 others',
+  button:'follow'
+},
+{
+  id:5,
+  username:'jung_kook',
+  img:person5,
+  secondName:'followed by john and 7 others',
+  button:'follow'
+},
+];
+
