@@ -5,7 +5,6 @@ import Profile from "./components/Profile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
-import PostCard from "./components/utils/PostCard";
 import Messages from "./pages/Messages";
 import Notifications from './pages/Notifications'
 
@@ -22,7 +21,6 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/notifications" element={<Notifications />} />
-
 
         </Routes>
       </Router>

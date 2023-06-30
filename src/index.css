@@ -20,31 +20,34 @@ input[type="email"] {
   @apply w-full  my-2 py-2 px-3 rounded-2xl focus:outline-none ;
 }
 
+/* for menu icons in large screen */
 .li-lg{
   @apply flex list-none gap-3 p-2 py-[10px]  xl:hover:bg-slate-100 w-full ml-[2px]  
 }
 
+/* for menu icons in small screen */
 .li-sm{
 @apply flex m-0 p-3 items-center align-middle gap-0 list-none
 }
 
+/* for menu icons avtive state*/
 .active{
-  @apply flex
+  @apply font-bold border bg-slate-50 xl:border-none flex items-center 
 }
 
+/* for icons across the site */
 .icon{
   @apply flex h-5 
 }
 
+/* for icon compoennts and post icons */
 .icon-comp, .post-icon{
-  @apply h-7 w-7 cursor-pointer hover:scale-110 hover:font-bold
-}
-.icon-comp.action{
-  @apply h-6 w-6 md:h-7 md:w-7 cursor-pointer hover:scale-110 hover:font-bold 
+  @apply h-7 w-7 cursor-pointer  hover:font-bold 
 }
 
-.profile{
-  @apply h-9 w-9 rounded-full
+/* for icons in single post like, comment , share , save ... */
+.icon-comp.action{
+  @apply h-6 w-6 md:h-7 md:w-7 cursor-pointer hover:scale-110 hover:font-bold 
 }
 
 .post-icon{
@@ -56,11 +59,18 @@ input[type="email"] {
   cursor: pointer;
 }
 
+/* for user-like icons in message page */
 .icon-msg{
   height: 52px;
   width: 52px;
 }
 
+/* for profile image  */
+.profile{
+  @apply h-9 w-9 rounded-full
+}
+
+/* for Link component form router dom */
 .link{
   text-decoration: none;
   
@@ -78,11 +88,9 @@ input[type="email"] {
   display: none;
 }
 
+/* for light texts grey color */
 .grey{
   color: rgb(191, 187, 187);
   font-size: small;
 }
 
-.active{
-  @apply font-bold border md:border-none flex items-center 
-}

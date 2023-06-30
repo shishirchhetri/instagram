@@ -34,7 +34,7 @@ const Sidebar = () => {
       path: "/",
       name: "Home",
       activeImg: <img src={homeActive} className="h-6 w-6 hover:scale-110" />,
-      img: <img src={home} className="h-6 w-6 " />,
+      img: <img src={home} className="h-6 w-6 hover:scale-110" />,
       title: "home",
     },
     {
@@ -58,7 +58,7 @@ const Sidebar = () => {
       path: "/reels",
       name: "Reels",
       activeImg: <img src={reelsActive} className="h-6 w-6 hover:scale-110 " />,
-      img: <img src={reels} className="h-6 w-6" />,
+      img: <img src={reels} className="h-6 w-6 hover:scale-110" />,
       title: "reels",
     },
     {
@@ -98,18 +98,18 @@ const Sidebar = () => {
   return (
     <div className="xl:w-[340px] sticky top-0 left-0 z-10">
       <div className="hidden md:flex flex-col justify-between h-screen w-full border-r max-w-[73px]  xl:max-w-[340px] sticky top-0 left-0 ">
-        <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-[245px] mt-1 ">
+        <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-full mt-1 ">
           {/* logo */}
           <div className="p-3 py-[26px]  w-full">
-            <Link to="/" className="link" onClick={() => handleActiveNav("home")}>
+            <Link to="/" className="link " onClick={() => handleActiveNav("home")}>
               <div className="hidden xl:inline">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo"  />
               </div>
-              <BsInstagram className="h-6 w-6 inline xl:hidden" />
+              <BsInstagram className="h-6 w-6 inline xl:hidden hover:scale-110" />
             </Link>
           </div>
-          {/* menu list items */}
 
+          {/* menu list items */}
           {menuItems.map((item) => (
             <Link to={item.path} key={item.id}>
               <li

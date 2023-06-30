@@ -5,13 +5,14 @@ import photo from "../assets/img2.jpg";
 
 const Profile = () => {
   return (
-    <div className=" flex flex-col gap-2 bg-red-200 p-2 w-3/4 m-auto max-w-[900px]">
+    <div className=" flex flex-col gap-2  p-2 w-3/4 m-auto max-w-[900px]">
       <div className="flex w-full justify-between ">
-        <div className="flex w-1/2 justify-center items-center bg-green-200 p-2">
+        {/* user's dp */}
+        <div className="flex w-1/2 justify-center items-center  p-2">
           <img src={photo} alt="" className="h-48 w-48 rounded-full" />
         </div>
-
-        <div className="flex flex-col w-full bg-green-300 px-4 gap-2">
+{/* user details */}
+        <div className="flex flex-col w-full  px-4 gap-2">
           <div className="flex gap-3 py-1 px-2 items-center ">
             <div>User name</div>
             <div>
@@ -46,7 +47,7 @@ const Profile = () => {
 
           <div className="mb-10">
             <div className="ml-2 font-[500] ">Name</div>
-
+{/* user's bio */}
             <div className="ml-2 ">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -58,6 +59,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
+
+      {/* user's highlight story section */}
       <div>
         <div className="flex gap-6 items-center justify-start ml-3 my-5">
           <div className="flex flex-col items-center justify-center">
@@ -93,6 +96,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      {/* user's posts section */}
       <div>
         <div className="border flex flex-col gap-2 py-1">
           <div className="flex w-1/2 m-auto gap-8 justify-center align-middle items-center py-2">
@@ -100,7 +104,8 @@ const Profile = () => {
             <div>saved</div>
             <div>Tagged</div>
           </div>
-          <div className="flex flex-wrap items-center justify-start gap-2 py-1">
+          {/* users's post gallery */}
+          <div className="grid grid-cols-4 gap-1">
             <img src={photo} alt="" className=" h-64 w-64" />
             <img src={photo} alt="" className="h-64 w-64" />
             <img src={photo} alt="" className="h-64 w-64" />
