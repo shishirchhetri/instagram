@@ -30,9 +30,9 @@ const PostCard = ({ posts }) => {
             </div>
 
             {/* Post Image */}
-            <div className="w-full aspect-[1.3/1.8] flex items-center justify-center bg-black rounded-md ">
+            <div className="w-full aspect-[1/1.3] flex items-center justify-center bg-black rounded-md ">
               <img
-                className=" bg-center rounded-md "
+                className=" bg-center rounded-md  bg-cover "
                 src={post.postImg}
                 alt="Post"
               />

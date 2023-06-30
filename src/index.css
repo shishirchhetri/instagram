@@ -21,7 +21,7 @@ input[type="email"] {
 }
 
 .li-lg{
-  @apply flex list-none gap-3 p-2 py-[10px]  xl:hover:bg-slate-100 w-full ml-[2px]  max-w-[245px]
+  @apply flex list-none gap-3 p-2 py-[10px]  xl:hover:bg-slate-100 w-full ml-[2px]  
 }
 
 .li-sm{
@@ -84,5 +84,5 @@ input[type="email"] {
 }
 
 .active{
-  font-size: bold;
+  @apply font-bold border md:border-none flex items-center 
 }

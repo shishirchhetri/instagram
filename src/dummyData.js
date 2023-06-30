@@ -127,17 +127,17 @@ export const stories = [
   {
     id: 2,
     username: "achel",
-    image: user2,
+    image: post8,
   },
   {
     id: 3,
     username: "legend",
-    image: user3,
+    image: post2,
   },
   {
     id: 4,
     username: "lovely",
-    image: user4,
+    image:post10,
   },
   {
     id: 5,
@@ -152,7 +152,7 @@ export const stories = [
   {
     id: 7,
     username: "zoro",
-    image: user7,
+    image: post9,
   },
   {
     id: 8,

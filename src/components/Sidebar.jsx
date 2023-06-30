@@ -12,10 +12,7 @@ import reels from "../assets/icons/video.png";
 import reelsActive from "../assets/icons/videoFill.png";
 import home from "../assets/icons/home.png";
 import homeActive from "../assets/icons/homeActive.png";
-import {
-  AiOutlineHeart,
-  AiFillHeart,
-} from "react-icons/ai";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import {
   MdOutlineExplore,
   MdOutlineAddBox,
@@ -92,7 +89,9 @@ const Sidebar = () => {
       id: 8,
       path: "/profile",
       name: "Profile",
-      img: <img src={profile} className="h-6 w-6 rounded-full hover:scale-110" />,
+      img: (
+        <img src={profile} className="h-6 w-6 rounded-full hover:scale-110" />
+      ),
       title: "profile",
     },
   ];
@@ -102,13 +101,15 @@ const Sidebar = () => {
         <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-[245px] mt-1 ">
           {/* logo */}
           <div className="p-3 py-[26px]  w-full">
-            <div className="hidden xl:inline">
-              <img src={logo} alt="logo" />
-            </div>
-            <BsInstagram className="h-6 w-6 inline xl:hidden" />
+            <Link to="/" className="link" onClick={() => handleActiveNav("home")}>
+              <div className="hidden xl:inline">
+                <img src={logo} alt="logo" />
+              </div>
+              <BsInstagram className="h-6 w-6 inline xl:hidden" />
+            </Link>
           </div>
           {/* menu list items */}
-          
+
           {menuItems.map((item) => (
             <Link to={item.path} key={item.id}>
               <li
@@ -116,7 +117,7 @@ const Sidebar = () => {
                 onClick={() => handleActiveNav(item.title)}
               >
                 {activeNav === item.title
-                  ? item.activeIcon || item.activeImg
+                  ? item.activeIcon || item.activeImg || item.img
                   : item.icon || item.img}
                 <span className="hidden xl:inline">{item.name}</span>
               </li>
@@ -125,9 +126,9 @@ const Sidebar = () => {
         </div>
 
         {/* bottom hamburger menu */}
-        <div className="flex flex-col capitalize  gap-2  p-3 rounded-md mb-2">
+        <div className="flex flex-col capitalize  gap-2  p-3 rounded-md mb-2 ">
           <li
-            className={`li-lg ${activeNav === "menu" ? "active" : ""}`}
+            className={`li-lg flex ${activeNav === "menu" ? "active" : ""}`}
             onClick={() => handleActiveNav("menu")}
           >
             {activeNav === "menu" ? (
@@ -141,12 +142,12 @@ const Sidebar = () => {
         </div>
       </div>
       {/* responsive menu changes in small screen */}
-<div className="fixed top-0 left-0 right-0 md:hidden">
-  <Topbar/>
-</div>
-<div className="fixed bottom-0 left-0 right-0 md:hidden">
-  <Bottombar/>
-</div>
+      <div className="fixed top-0 left-0 right-0 md:hidden">
+        <Topbar />
+      </div>
+      <div className="fixed bottom-0 left-0 right-0 md:hidden">
+        <Bottombar />
+      </div>
 
       {/* <div className="z-10 fixed md:hidden flex flex-col justify-between h-screen">
         <Topbar />
