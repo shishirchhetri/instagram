@@ -17,7 +17,7 @@ const Profile = () => {
   return (
     <div className="my-12 flex flex-col md:my-2 p-2 pb-0  xl:mt-5 w-[935px] mx-auto">
       {/* top - user dp and user-details section */}
-      <div className="flex h-[206px] w-full justify-between mt-4">
+      <div className="flex  w-full justify-between mt-4">
         {/* user's dp */}
         <div className="flex-[1] flex items-center justify-center">
           <div className="flex h-[1light50px] w-[150px] justify-center items-center ">
@@ -83,7 +83,7 @@ const Profile = () => {
       </div>
 
       {/* user's highlight story section */}
-      <div className=" flex items-center justify-start h-130px w-full p-2">
+      <div className=" flex items-center justify-start h-130px w-full p-2 overflow-scroll scrollable">
         <div className="pl-12 flex gap-6 items-center justify-start ">
           <div className=" flex gap-1 h-[128px] w-[115px] ">
             {/* single user-highlight story */}

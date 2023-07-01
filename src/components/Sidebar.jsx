@@ -89,11 +89,11 @@ const Sidebar = () => {
       id: 8,
       path: "/profile",
       name: "Profile",
-      img: (
-        <img src={profile} className="h-8 w-8 rounded-full hover:scale-110" />
+      activeImg: (
+        <img src={profile} className="h-8 w-8 rounded-full hover:scale-110 border-2 border-black" />
       ),
       img: (
-        <img src={profile} className="h-8 w-8 rounded-full hover:scale-110 border-2 border-black" />
+        <img src={profile} className="h-8 w-8 rounded-full hover:scale-110  " />
       ),
       title: "profile",
     },
