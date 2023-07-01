@@ -1,6 +1,8 @@
 import React from "react";
 import profile from "../../assets/img2.jpg";
 
+
+//for single user-like link in message page
 const Message = () => {
   return (
     <div>

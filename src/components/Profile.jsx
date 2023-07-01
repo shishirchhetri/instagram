@@ -5,13 +5,16 @@ import photo from "../assets/img2.jpg";
 
 const Profile = () => {
   return (
-    <div className=" flex flex-col gap-2  p-2 w-3/4 m-auto max-w-[900px]">
-      <div className="flex w-full justify-between ">
+    <div className=" flex flex-col p-2 mb-[44px] w-[935px] mx-auto">
+      <div className="flex h-[206px] w-full justify-between ">
         {/* user's dp */}
-        <div className="flex w-1/2 justify-center items-center  p-2">
-          <img src={photo} alt="" className="h-48 w-48 rounded-full" />
+        <div className="flex-[1] flex items-center justify-center">
+        <div className="flex h-[150px] w-[150px] justify-center items-center">
+          <img src={photo} alt="" className="h-full w-full rounded-full" />
         </div>
-{/* user details */}
+        </div>
+        {/* user details */}
+        <div className="flex-[2]">
         <div className="flex flex-col w-full  px-4 gap-2">
           <div className="flex gap-3 py-1 px-2 items-center ">
             <div>User name</div>
@@ -47,7 +50,7 @@ const Profile = () => {
 
           <div className="mb-10">
             <div className="ml-2 font-[500] ">Name</div>
-{/* user's bio */}
+            {/* user's bio */}
             <div className="ml-2 ">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -58,44 +61,35 @@ const Profile = () => {
             </div>
           </div>
         </div>
+        </div>
       </div>
 
       {/* user's highlight story section */}
-      <div>
-        <div className="flex gap-6 items-center justify-start ml-3 my-5">
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={photo}
-              alt=""
-              className="h-[100px] w-[100px] rounded-full"
-            />{" "}
-            <span>Name</span>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={photo}
-              alt=""
-              className="h-[100px] w-[100px] rounded-full"
-            />{" "}
-            <span>Name</span>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={photo}
-              alt=""
-              className="h-[100px] w-[100px] rounded-full"
-            />{" "}
-            <span>Name</span>
-          </div>
-
-          <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center justify-center bg-white rounded-full h-[100px] w-[100px] ">
-              <BsPlusLg className=" h-16 w-16 rounded-full opacity-50" />
+      <div className=" flex items-center justify-start h-130px w-full p-2">
+        <div className="flex gap-6 items-center justify-start ">
+          <div className="flex gap-1 h-[128px] w-[115px] ">
+            <div className="flex flex-col h-[128px] w-[115px] items-center justify-center">
+              <div className="h-[87px] w-[87px] rounded-full border items-center flex justify-center">
+                <img
+                  src={photo}
+                  alt=""
+                  className="object-cover h-full w-full rounded-full p-0.5 border-2 border-white"
+                />
+              </div>
+              <span>Name</span>
             </div>
-            <span>New</span>
+
+            {/* add new story section */}
+            <div className="flex flex-col h-[128px] w-[115px] items-center justify-center">
+              <div className="h-[87px] w-[87px] rounded-full border items-center flex justify-center">
+                <BsPlusLg className="object-cover h-full w-full rounded-full p-0.5 border-2 border-white opacity-50" />
+              </div>
+              <span>New</span>
+            </div>
           </div>
         </div>
       </div>
+
       {/* user's posts section */}
       <div>
         <div className="border flex flex-col gap-2 py-1">
@@ -105,12 +99,37 @@ const Profile = () => {
             <div>Tagged</div>
           </div>
           {/* users's post gallery */}
-          <div className="grid grid-cols-4 gap-1">
-            <img src={photo} alt="" className=" h-64 w-64" />
-            <img src={photo} alt="" className="h-64 w-64" />
-            <img src={photo} alt="" className="h-64 w-64" />
-            <img src={photo} alt="" className="h-64 w-64" />
-            <img src={photo} alt="" className="h-64 w-64" />
+          <div className="w-[935px] grid grid-cols-3 grid-flow-row  m-auto ">
+            <img
+              src={photo}
+              alt=""
+              className="object-cover h-[309px] w-[309px]"
+            />
+            <img
+              src={photo}
+              alt=""
+              className="object-cover h-[309px] w-[309px]"
+            />
+            <img
+              src={photo}
+              alt=""
+              className="object-cover h-[309px] w-[309px]"
+            />
+            <img
+              src={photo}
+              alt=""
+              className="object-cover h-[309px] w-[309px]"
+            />
+            <img
+              src={photo}
+              alt=""
+              className="object-cover h-[309px] w-[309px]"
+            />
+            <img
+              src={photo}
+              alt=""
+              className="object-cover h-[309px] w-[309px]"
+            />
           </div>
         </div>
       </div>
