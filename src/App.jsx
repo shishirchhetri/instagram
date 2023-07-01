@@ -1,7 +1,7 @@
 import React from "react";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import Profile from "./components/Profile";
+import Profile from "./pages/Profile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";

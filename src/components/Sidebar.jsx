@@ -90,7 +90,10 @@ const Sidebar = () => {
       path: "/profile",
       name: "Profile",
       img: (
-        <img src={profile} className="h-6 w-6 rounded-full hover:scale-110" />
+        <img src={profile} className="h-8 w-8 rounded-full hover:scale-110" />
+      ),
+      img: (
+        <img src={profile} className="h-8 w-8 rounded-full hover:scale-110 border-2 border-black" />
       ),
       title: "profile",
     },
@@ -100,7 +103,7 @@ const Sidebar = () => {
       <div className="hidden md:flex flex-col justify-between h-screen w-full border-r max-w-[73px]  xl:max-w-[340px] sticky top-0 left-0 ">
         <div className="flex flex-col capitalize  gap-2 p-[11px] px-[12px] rounded-md w-full max-w-[73px]  xl:max-w-full mt-1 ">
           {/* logo */}
-          <div className="p-3 py-[26px]  w-full">
+          <div className="p-3 py-[26px] -mt-2 mb-4 w-full">
             <Link to="/" className="link " onClick={() => handleActiveNav("home")}>
               <div className="hidden xl:inline">
                 <img src={logo} alt="logo"  />

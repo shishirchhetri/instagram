@@ -4,7 +4,7 @@ const Stories = ({ stories }) => {
   return (
     <div className="flex items-center gap-2 w-full">
       {stories.map((story) => (
-        <div key={story.id} className="flex flex-col items-center justify-center">
+        <div key={story.id} className="flex flex-col items-center justify-center cursor-pointer">
           <div className='w-16 h-16  mr-2'>
           <img
             src={story.image}
