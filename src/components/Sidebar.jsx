@@ -74,7 +74,7 @@ const Sidebar = () => {
       path: "/notifications",
       name: "Notifications",
       activeIcon: <AiFillHeart className="icon-comp" />,
-      icon: <AiOutlineHeart className="icon-comp" />,
+      icon: <AiOutlineHeart className="icon-comp  " />,
       title: "notifications",
     },
     {

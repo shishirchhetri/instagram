@@ -8,6 +8,9 @@ import share from '../../assets/icons/send.png'
 import smile from '../../assets/icons/smile.png'
 
 const PostCard = ({ posts }) => {
+  const addLike = (count)=>{
+    count+1;
+  }
   return (
     <div className="container mx-auto">
       {posts.map((post) => {
@@ -42,7 +45,7 @@ const PostCard = ({ posts }) => {
             <div className="flex items-center justify-between py-2">
               <div className="flex space-x-4 items-center justify-center">
                 <button className="text-gray-500 hover:text-gray-700">
-                  <img src={like} className="icon-comp action" alt="" />
+                  <img src={like} className="icon-comp action" alt="" onClick={addLike}/>
                 </button>
                 <button className="text-gray-500 hover:text-gray-700">
                   <img src={comment} className="icon-comp action" alt="" />
