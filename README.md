@@ -14,7 +14,7 @@ You can view a live demo of the Instagram Clone at [https://shishirchhetri-insta
 
 ## Features
 - **Homepage**: Replicates the look and feel of Instagram's main feed.
-- **Chat Page**: Allows users to view and engage in conversations.
+- **Chat Page**: Allows users to view messaging UI.
 - **Profile Page**: Displays user profiles with posts and bio information.
 - Responsive design for a seamless experience on various devices.
 
@@ -25,15 +25,15 @@ You can view a live demo of the Instagram Clone at [https://shishirchhetri-insta
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/instagram-clone.git
+   git clone https://github.com/shishirchhetri/instagram.git ```
    
 ### Navigate to Project Directory
 
-**cd Instagram-clone**
+``` cd instagram ```
 
 ### Install Dependencies
 
-  **npm i**
+```npm install ```
   
 ### Some Snaps
 ![Homepage](https://github.com/shishirchhetri/instagram/assets/68102168/629845a7-c351-47bb-aeb7-686be07063e7)
