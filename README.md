@@ -25,7 +25,7 @@ You can view a live demo of the Instagram Clone at [https://shishirchhetri-insta
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shishirchhetri/instagram.git ```
+   git clone git@github.com:shishirchhetri/instagram.git
    
 ### Navigate to Project Directory
 
